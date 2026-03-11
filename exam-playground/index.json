@@ -1,13 +1,13 @@
 {
-  "title": "Single Container Deployment",
-  "description": "Deploy a single container and access it",
+  "title": "Exam playground",
+  "description": "Scenario for exam questions",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "Your first command",
+        "title": "Exam playground",
         "text": "step1.md"
       }
     ]
