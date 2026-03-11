@@ -1,12 +1,13 @@
 {
-  "title": "Code Actions",
-  "description": "Let users copy or exec code blocks",
+  "title": "Single Container Deployment",
+  "description": "Deploy a single container and access it",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
+        "title": "Your first command",
         "text": "step1.md"
       }
     ]
