@@ -1,4 +1,4 @@
-# Your first single container deployment
+Your first single container deployment
 
 You will be presented with a terminal and a browser window. The terminal is connected to a Kubernetes cluster where you can run `kubectl` commands. The browser window is connected to the cluster's API server, allowing you to access services running in the cluster.
 

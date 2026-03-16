@@ -1,4 +1,4 @@
-# Exam playground
+Exam playground
 
 Here are the commands to verify that the cluster is up and running:
 ```bash
