@@ -5,3 +5,9 @@ kubectl apply -f https://raw.githubusercontent.com/nginx/nginx-gateway-fabric/v1
 kubectl wait --timeout=5m -n nginx-gateway \
     deployment/nginx-gateway \
     --for=condition=Available
+
+curl -L https://github.com/isislab-unisa/scenarios/archive/main.zip -o scenarios.zip
+unzip scenarios.zip -d scenarios
+mkdir templates
+mv scenarios/scenarios-main/kubernetes-system-design/* templates/
+rm -rf scenarios.zip scenarios/scenarios-main scenarios
