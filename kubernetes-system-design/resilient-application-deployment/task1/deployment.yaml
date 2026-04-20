@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx-resilient
+  name: nginx-resilient
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx-resilient
+  template:
+    metadata:
+      labels:
+        app: nginx-resilient
+    spec:
+      containers:
+      - image: nginx:1.27
+        name: nginx
+        ports:
+        - containerPort: 80

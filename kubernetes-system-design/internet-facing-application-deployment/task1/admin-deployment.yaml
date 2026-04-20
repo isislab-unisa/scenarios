@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: admin
+  name: admin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin
+  template:
+    metadata:
+      labels:
+        app: admin
+    spec:
+      containers:
+      - image: paulbouwer/hello-kubernetes:1.10
+        name: hello-kubernetes
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MESSAGE
+          value: "Admin Panel"

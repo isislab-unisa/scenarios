@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: api
+  name: api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+      - image: paulbouwer/hello-kubernetes:1.10
+        name: hello-kubernetes
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MESSAGE
+          value: "API Service"

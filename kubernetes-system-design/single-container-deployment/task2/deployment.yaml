@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: whoami-inspector
+  name: whoami-inspector
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whoami-inspector
+  template:
+    metadata:
+      labels:
+        app: whoami-inspector
+    spec:
+      containers:
+      - image: traefik/whoami:v1.10
+        name: whoami
+        ports:
+        - containerPort: 80

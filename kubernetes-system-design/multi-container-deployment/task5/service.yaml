@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-content-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: nginx-with-syncer
+  ports:
+  - port: 80
+    targetPort: 80

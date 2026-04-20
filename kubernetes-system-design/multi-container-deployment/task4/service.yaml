@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpd-adapter-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: httpd-with-adapter
+  ports:
+  - port: 80
+    targetPort: 80

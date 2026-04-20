@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: podinfo-resilient
+  name: podinfo-resilient
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: podinfo-resilient
+  template:
+    metadata:
+      labels:
+        app: podinfo-resilient
+    spec:
+      containers:
+      - image: stefanprodan/podinfo:6.4.0
+        name: podinfo
+        ports:
+        - containerPort: 9898

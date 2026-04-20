@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hello-dashboard
+  name: hello-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-dashboard
+  template:
+    metadata:
+      labels:
+        app: hello-dashboard
+    spec:
+      containers:
+      - image: paulbouwer/hello-kubernetes:1.10
+        name: hello-kubernetes
+        ports:
+        - containerPort: 8080

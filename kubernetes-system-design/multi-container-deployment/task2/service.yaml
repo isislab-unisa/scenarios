@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpd-monitor-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: httpd-with-monitor
+  ports:
+  - port: 80
+    targetPort: 80

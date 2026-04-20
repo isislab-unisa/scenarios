@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx-welcome
+  name: nginx-welcome
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-welcome
+  template:
+    metadata:
+      labels:
+        app: nginx-welcome
+    spec:
+      containers:
+      - image: nginxdemos/hello:plain-text
+        name: hello
+        ports:
+        - containerPort: 80

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: podinfo-health
+  name: podinfo-health
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: podinfo-health
+  template:
+    metadata:
+      labels:
+        app: podinfo-health
+    spec:
+      containers:
+      - image: stefanprodan/podinfo:6.4.0
+        name: podinfo
+        ports:
+        - containerPort: 9898
