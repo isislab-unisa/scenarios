@@ -13,4 +13,4 @@ NAME           STATUS   ROLES           AGE     VERSION
 controlplane   Ready    control-plane   5d13h   v1.35.1
 ```
 
-Click *START* to begin the scenario.
+Click *START* to start using the playground.
