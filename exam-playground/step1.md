@@ -1,4 +1,4 @@
-Verify that the cluster is up and running:
+Verify that the Gateway is running and the GatewayClass is accepted:
 
 ```bash
 kubectl get deployment -n nginx-gateway
@@ -16,7 +16,3 @@ nginx-gateway   1/1     1            1           23m
 NAME    CONTROLLER                                   ACCEPTED   AGE
 nginx   gateway.nginx.org/nginx-gateway-controller   True       24m
 ```
-
-Keep in mind that you can find all templates for the tasks in the `~/templates` folder.
-
-The floor is yours!

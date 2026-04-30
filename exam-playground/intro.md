@@ -1,18 +1,16 @@
-You will be presented with a terminal and a browser window. The terminal is connected to a Kubernetes cluster where you can run `kubectl` commands. The browser window is connected to the cluster's API server, allowing you to access services running in the cluster.
-
-You can find all templates for the scenarios in the `~/templates` folder, where you can find all YAML files for each task.
+This playground includes a terminal connected to a Kubernetes cluster where you can run `kubectl` commands.
 
 To verify that the cluster is up and running, run the following command in the terminal: 
 
 ```bash
-kubectl wait --timeout=5m -n nginx-gateway \
-    deployment/nginx-gateway \
-    --for=condition=Available
+kubectl get nodes
 ```
 
+The output should show a single node in the `Ready` state:
+
 ```bash
-kubectl get deployment -n nginx-gateway
-kubectl get gatewayclass
+NAME           STATUS   ROLES           AGE     VERSION
+controlplane   Ready    control-plane   5d13h   v1.35.1
 ```
 
 Click *START* to begin the scenario.

@@ -8,8 +8,12 @@
     },
     "steps": [
       {
-        "title": "Task Playground",
+        "title": "Gateway Readiness Check",
         "text": "step1.md"
+      },
+      {
+        "title": "Templates",
+        "text": "step2.md"
       }
     ]
   },
