@@ -1,5 +1,5 @@
 {
-  "title": "Exam playground",
+  "title": "Kubernetes System Design in Small Easy Steps",
   "description": "Scenario for exam questions",
   "details": {
     "intro": {
@@ -8,7 +8,7 @@
     },
     "steps": [
       {
-        "title": "Playground",
+        "title": "Task Playground",
         "text": "step1.md"
       }
     ]

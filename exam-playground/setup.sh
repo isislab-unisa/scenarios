@@ -1,3 +1,5 @@
+#!/bin/bash
+
 curl -L https://github.com/isislab-unisa/scenarios/archive/main.zip -o scenarios.zip
 unzip scenarios.zip -d scenarios
 mkdir templates
